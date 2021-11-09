@@ -20,5 +20,6 @@ A base-level mockup would store this information in the following way:
 •	Key: Username (hashed + indexed for lookup purposes)
 •	Value: Password (private variable in the node and hashed from user input)
 o	Helper methods should only compare a user input to the value, but not allow the raw hash value to be pulled
+o Additional values to hold (let's keep adding values here): team, role, security level, email address
 Our method for handling collisions can be flexible, but we will likely achieve the best performance results by storing as a LinkedList.
 A hash data structure will also allow flexibility with resizing. An easy way we can do this is by setting a load factor threshold to know when we need to expand our number of indices available.
