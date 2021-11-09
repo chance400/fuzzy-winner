@@ -12,6 +12,7 @@ However, every individual at a business/organization utilizing this functionalit
 
 Graphical Interface:
 The two core user interfaces would be a login page and a registration page. The login page would authenticate against existing data and the registration would create new entries. There is room for flexibility here on how many data elements we are collecting and the overall look and feel.
+Post-login idea - show the user their profile with other data elements we add; things like security level, email address, role, team, etc. If a user has a certain security level, we could also allow them to search for and view other members' profiles with a security level below theres. Could also lock this feature to a specific level of security.
 
 Data:
 A hash data structure will allow both efficient lookup and secure storage of certain values and using a node to store those in combination with a lookup key will likely achieve our core workflow. This would be taking a bucket approach to storing index positions.
